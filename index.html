@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spring Field College · scroll animations</title>
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- scroll progress bar -->
+  <div id="scrollProgress"></div>
+  
+  <!-- announcement bar -->
+  <div class="top-announce"><i class="fas fa-bullhorn"></i> Admissions Open 2026 – Apply Now</div>
+
+  <!-- sticky navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="logo">SPRING FIELD<span> COLLEGE</span></div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#" class="nav-link active-link" data-page="home">Home</a></li>
+        <li><a href="#" class="nav-link" data-page="about">About Us</a></li>
+        <li><a href="#" class="nav-link" data-page="programs">Programs</a></li>
+        <li><a href="#" class="nav-link" data-page="admissions">Admissions</a></li>
+        <li><a href="#" class="nav-link" data-page="faculty">Faculty</a></li>
+        <li><a href="#" class="nav-link" data-page="campus">Campus Life</a></li>
+        <li><a href="#" class="nav-link" data-page="research">Research</a></li>
+        <li><a href="#" class="nav-link" data-page="news">News & Events</a></li>
+        <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+        <li><a href="#" class="cta-nav">Apply Now <i class="fas fa-arrow-right"></i></a></li>
+        <li><i class="fas fa-moon" id="darkToggle"></i></li>
+      </ul>
+      <div class="mobile-menu-icon" id="mobileToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- pages container -->
+  <div class="pages">
+    <!-- HOME PAGE -->
+    <div id="home" class="page active-page">
+      <section class="hero-home" id="heroSection">
+        <div class="container hero-content">
+          <h1>Empowering Future Leaders Through Quality Education</h1>
+          <p style="font-size: 1.3rem; margin: 20px 0;">Innovative learning, experienced faculty, and global opportunities.</p>
+          <div>
+            <a href="#" class="btn btn-primary">Apply Now</a>
+            <a href="#" class="btn">Explore Programs</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item"><i class="fas fa-users"></i> 2000+ Students</div>
+            <div class="stat-item"><i class="fas fa-chalkboard-user"></i> 50+ Faculty</div>
+            <div class="stat-item"><i class="fas fa-book-open"></i> 20+ Programs</div>
+            <div class="stat-item"><i class="fas fa-briefcase"></i> 85% Employment</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <!-- about preview -->
+        <div class="two-col fade-up" style="margin: 60px 0;">
+          <div class="campus-img"></div>
+          <div>
+            <h2>About Our College</h2>
+            <p style="margin: 20px 0;">With a mission to foster academic excellence and holistic growth, Empire State College blends heritage with innovation. Our vision: accessible, world-class education.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+
+        <!-- featured programs -->
+        <h2 class="section-title fade-up">Featured Programs</h2>
+        <div class="grid-6">
+          <div class="card fade-up"><i class="fas fa-laptop-code"></i><h3>Computer Science</h3><p>AI, data, and software.</p><a href="#">Learn More →</a></div>
+          <div class="card fade-up"><i class="fas fa-chart-line"></i><h3>Business Admin</h3><p>Leadership & markets.</p><a href="#">Learn More →</a></div>
+          <div class="card fade-up"><i class="fas fa-gear"></i><h3>Engineering</h3><p>Civil, mechanical, EE.</p><a href="#">Learn More →</a></div>
+          <div class="card fade-up"><i class="fas fa-heart-pulse"></i><h3>Medical Sciences</h3><p>Pre-med, nursing.</p><a href="#">Learn More →</a></div>
+          <div class="card fade-up"><i class="fas fa-palette"></i><h3>Arts & Humanities</h3><p>Creative & critical.</p><a href="#">Learn More →</a></div>
+          <div class="card fade-up"><i class="fas fa-scale-balanced"></i><h3>Social Sciences</h3><p>Psychology, sociology.</p><a href="#">Learn More →</a></div>
+        </div>
+
+        <!-- why choose us -->
+        <h2 class="section-title fade-up">Why Choose Us</h2>
+        <div class="grid-4">
+          <div class="card fade-up"><i class="fas fa-building"></i><h3>Modern Campus</h3><p>Smart labs & libraries</p></div>
+          <div class="card fade-up"><i class="fas fa-user-graduate"></i><h3>Experienced Faculty</h3><p>Industry experts</p></div>
+          <div class="card fade-up"><i class="fas fa-dollar-sign"></i><h3>Scholarships</h3><p>Merit & need-based</p></div>
+          <div class="card fade-up"><i class="fas fa-briefcase"></i><h3>Career Support</h3><p>Internships & placement</p></div>
+        </div>
+
+        <!-- campus life / slider + testimonials -->
+        <h2 class="section-title fade-up">Campus Life</h2>
+        <div class="slider-row fade-up">
+          <div class="card"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=300&h=200&fit=crop" style="width:100%; border-radius:20px;"><p>Student Union</p></div>
+          <div class="card"><img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=300&h=200&fit=crop" style="width:100%; border-radius:20px;"><p>Sports Complex</p></div>
+          <div class="card"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=300&h=200&fit=crop" style="width:100%; border-radius:20px;"><p>Library</p></div>
+        </div>
+        <div class="grid-3" style="margin-top:30px;">
+          <div class="card fade-up"><i class="fas fa-quote-left"></i> <p>"Amazing faculty and vibrant campus!" – BASIT ALI.</p></div>
+          <div class="card fade-up"><i class="fas fa-quote-left"></i> <p>"Research opportunities shaped my career." – SHERY KHAN.</p></div>
+          <div class="card fade-up"><i class="fas fa-quote-left"></i> <p>"Global network from day one." – ADIL KHAN.</p></div>
+        </div>
+
+        <!-- news & events -->
+        <h2 class="section-title fade-up">News & Events</h2>
+        <div class="grid-3">
+          <div class="card fade-up">📅 12 Mar 2026 <h3>Hackathon 2026</h3><p>Register for 48h build</p><a href="#">Read More</a></div>
+          <div class="card fade-up">📅 5 Apr 2026 <h3>Guest Lecture: AI Ethics</h3><p>Dr. Patel from MIT</p><a href="#">Read More</a></div>
+          <div class="card fade-up">📅 20 Apr 2026 <h3>Spring Fest</h3><p>Music & cultural night</p><a href="#">Read More</a></div>
+        </div>
+
+        <!-- CTA -->
+        <div class="fade-up" style="background: linear-gradient(145deg, #256eb0, #4794d3); border-radius: 80px; padding: 60px; text-align: center; margin: 60px 0; color: white;">
+          <h2 style="font-size: 2.5rem;">Start Your Academic Journey Today</h2>
+          <a href="#" class="btn" style="background: white; color:#0a4b7a; margin-top:20px;">Apply Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- other pages (simplified) -->
+    <div id="about" class="page"><div class="container" style="padding:40px 0;"><h1 class="fade-up">About Our Institution</h1><div class="fade-up" style="height:200px; background:#aac7df; border-radius:40px;"></div><h2 class="fade-up">History, Mission & Values</h2><p class="fade-up">Lorem ipsum dolor sit amet...</p></div></div>
+    <div id="programs" class="page"><div class="container"><h1 class="fade-up">Explore Academic Programs</h1><div class="grid-3"><div class="card fade-up">BSc CS · 4 yrs · eligibility: 65%</div><div class="card fade-up">MBA · 2 yrs · career: analytics</div><div class="card fade-up">Engineering · 4 yrs · download brochure</div></div></div></div>
+    <div id="admissions" class="page"><div class="container"><h1 class="fade-up">Admissions</h1><p class="fade-up">Eligibility, process, fee structure & form</p><form class="fade-up"><input placeholder="Name"><input placeholder="Email"><select><option>Select program</option></select><textarea placeholder="Message"></textarea><button class="btn btn-primary">Submit</button></form></div></div>
+    <div id="faculty" class="page"><div class="container"><h1 class="fade-up">Our Faculty</h1><div class="grid-4"><div class="card fade-up"><img src="https://randomuser.me/api/portraits/women/44.jpg" style="width:80px;border-radius:50%"><h4>Dr. Jane Adams</h4><p>Physics</p></div><div class="card fade-up"><img src="https://randomuser.me/api/portraits/men/32.jpg" style="width:80px;border-radius:50%"><h4>Dr. Mark Lee</h4><p>Business</p></div></div></div></div>
+    <div id="campus" class="page"><div class="container"><h1 class="fade-up">Campus Life</h1><div class="grid-3"><div class="card fade-up">Clubs</div><div class="card fade-up">Sports</div><div class="card fade-up">Hostel</div></div></div></div>
+    <div id="research" class="page"><div class="container"><h1 class="fade-up">Research & Innovation</h1><p class="fade-up">AI Lab, publications, partners</p></div></div>
+    <div id="news" class="page"><div class="container"><h1 class="fade-up">News & Events Calendar</h1><div class="fade-up">Event listing with filter</div></div></div>
+    <div id="contact" class="page"><div class="container"><h1 class="fade-up">Contact Us</h1><div class="map-placeholder fade-up"></div><div class="two-col fade-up"><div><p>📍 123 College Ave</p><p>📞 +1 234 567 890</p></div><form><input placeholder="Name"><input placeholder="Email"><textarea placeholder="Message"></textarea><button class="btn">Send</button></form></div></div></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div><h4>Empire State College</h4><p>Shaping tomorrow’s leaders through innovation and inclusion.</p></div>
+      <div><h4>Quick Links</h4><ul style="list-style:none;"><li>About</li><li>Programs</li><li>Admissions</li></ul></div>
+      <div><h4>Programs</h4><ul style="list-style:none;"><li>CS</li><li>Business</li><li>Engineering</li></ul></div>
+      <div><h4>Contact</h4><p><i class="fas fa-map-pin"></i> 456 University Ave, NY<br><i class="fas fa-phone"></i> +1 800 555 1234<br><i class="fas fa-envelope"></i> info@empirestate.edu</p><div class="social-icons"><i class="fab fa-linkedin"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></div></div>
+    </div>
+    <div class="bottom-strip">© 2026 Empire State College | All Rights Reserved</div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
